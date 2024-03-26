@@ -1,46 +1,82 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<div class="header-area  bg-26015e mb-0 pb-0 w-100" style="background: #26015e; padding: 14px 0px;">
+  <div class="container mw-1755">
+    <div class="row justify-content-space-between align-items-center">
+      <div class="col d-flex align-items-center p-0">
+        <ul class="p-0 mb-0 list-unstyled d-md-flex align-items-center header-l-content position-relative z-1 justify-content-between text-center w-100">
+          <li>
+            <i class="fa-solid fa-house-user" style="color: #E6AA00; margin-right: 6px;"></i>
+            <span class="text-white">Varidhi International School, Mulbagal taluk Kolar</span>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="fa-regular fa-envelope" style="color: #fff; margin-right: 6px;"></i>
+            <a href="mailto:varidhi.vect@gmail.com" class="text-decoration-none " style="color: #fff;padding-bottom: 6px;">varidhi.vect@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col justify-content-center" >
+        <div class="header-r-content d-flex justify-content-center">
+          <div class="call d-flex justify-content-center align-items-center w-100">
+            <i class="fa-solid fa-phone" style="color: #fff;margin-right: 6px;"></i>
+            <a href="tel:+919035595831" class="text-decoration-none" style="color: #fff;">+91 9035595831</a>
+          </div>
+          <ul class="ps-0 mb-0 list-unstyled d-flex align-items-center justify-content-center w-100">
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook" style="color: #fff;margin-right: 12px;"> </i></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter" style="color: #fff;margin-right: 12px;"></i></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #fff;margin-right: 12px;"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" style="color: #fff;margin-right: 12px;"></i></a></li>
+            <li><a href="https://www.youtube.com/@VIS_17" target="_blank"><i class="fa-brands fa-youtube" style="color: #fff;margin-right: 12px;"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top pt-0 mt-0 w-100" >
+  <div class="container-fluid">
+    <a class="navbar-brand" >
+      <img src="../../assets/logo.png" alt="Bootstrap" height="85"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+            <a class="nav-link" routerLinkActive="active" aria-current="page" routerLink="/home">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" routerLink="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" [ngClass]="{ 'active': router.isActive('about-school', true) || router.isActive('our-founder', true), 'show':mouseEnter }" role="button" data-bs-toggle="dropdown" aria-expanded="false" ng-mouseenter="mouseEnter=true" ng-mouseleave="mouseEnter=false" onmouseover="mouseEnter=true" onmouseleave="mouseEnter=false">
               About Us
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" [ngClass]="{'show':mouseEnter}" >
               <li><a class="dropdown-item" routerLink="/about-school">About School</a></li>
-              <li><a class="dropdown-item" routerLink="our-founder">Our Founder</a></li>
+              <li><a class="dropdown-item" routerLink="/our-founder">Our Founder</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/admissions">Admissions</a>
+            <a class="nav-link" routerLink="/admissions" routerLinkActive="active">Admissions</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/infrastructure">Infrastructure</a>
+            <a class="nav-link" routerLink="/infrastructure" routerLinkActive="active">Infrastructure</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/awards">Awards & Achievements</a>
+            <a class="nav-link" routerLink="/awards" routerLinkActive="active">Awards & Achievements</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/social">Social Activities</a>
+            <a class="nav-link" routerLink="/social" routerLinkActive="active">Social Activities</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/gallery">Gallery</a>
+            <a class="nav-link" routerLink="/gallery" routerLinkActive="active">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/contact">Contact Us</a>
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact Us</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>

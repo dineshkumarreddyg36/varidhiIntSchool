@@ -1,0 +1,213 @@
+.btn-primary{
+    background-color: rgb(254, 105, 6);
+    border: rgb(254, 105, 6); 
+    border-radius: 50px;
+}
+.btn-primary i{
+    transform: rotate(-45deg);
+}
+.btn-primary:hover{
+    background-color: #E6AA00;
+}
+.btn-primary:hover i {
+    transform: rotate(0deg);
+    transition: .4s
+}
+
+.shape.shape-3 {
+    animation: moveBounce 6s infinite linear;
+    width: 25%;
+}
+.shape {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    z-index: -1;
+}
+
+.shape.shape-4 {
+    top: 13px;
+    left: 290px;
+    animation: off-on 10s infinite linear;
+}
+
+.mission-single-item {
+    padding: 52px 56px;
+    border-radius: 25px;
+}
+
+.mission-single-item a i{
+    transform: rotate(-45deg);
+}
+
+.mission-single-item a:hover i{
+    transform: rotate(0deg);
+    transition: .4s
+}
+
+.section-title {
+    max-width: 636px;
+    margin: -4px auto 55px;
+    text-align: center;
+}
+
+.features-single-item {
+    max-width: 365px;
+}
+
+.features-single-item i {
+    width: 120px;
+    height: 120px;
+    line-height: 140px;
+    font-size: 70px;
+    border-radius: 40px;
+    margin-bottom: 22px !important;
+    display: inline-block;
+}
+
+
+.transition-y {
+    transition: all ease 0.5s;
+}
+
+.read-more {
+    font-weight: 500;
+    font-size: 15px;
+    color: #21465B;
+    text-decoration: none;
+}
+
+.shape.shape-2 {
+    position: relative;
+    top: -100px;
+    left: 950px;
+    animation: moveBounce 6s infinite linear;
+}
+
+.shape.shape-1 {
+    position: relative;
+    top: -217px;
+    left: 21px;
+    animation: moveBounce 9s infinite linear;
+}
+
+.top-title {
+    font-size: 16px;
+    margin-bottom: 2px;
+    color: #5DA357;
+    display: block;
+}
+
+.section-title h2, .section-title .h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.courses-single-item {
+    padding: 20px;
+}
+.courses-single-item .courses-img {
+    margin-bottom: 30px;
+}
+
+.courses-single-item p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.courses-single-item {
+    padding: 28px;
+    background-image: repeating-linear-gradient(0deg, #E6AA00, #E6AA00 12px, transparent 12px, transparent 23px, #E6AA00 23px), repeating-linear-gradient(90deg, #E6AA00, #E6AA00 12px, transparent 12px, transparent 23px, #E6AA00 23px), repeating-linear-gradient(180deg, #E6AA00, #E6AA00 12px, transparent 12px, transparent 23px, #E6AA00 23px), repeating-linear-gradient(270deg, #E6AA00, #E6AA00 12px, transparent 12px, transparent 23px, #E6AA00 23px);
+    background-size: 1px calc(100% + 23px), calc(100% + 23px) 1px, 1px calc(100% + 23px), calc(100% + 23px) 1px;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-repeat: no-repeat;
+}
+
+.courses-single-item:hover {
+    animation: borderAnimation 1s infinite linear;
+}
+
+.transition-y:hover {
+    transform: translateY(-5px);
+}
+
+.bg-img {
+    /* background-image: url(../../assets/learning-3.jpg); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100%;
+}
+
+.content{
+    font-size: 36px;
+    color: #fff;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    margin-bottom: 30px;
+    max-width: 425px;
+}
+
+.section-title.left-title {
+    margin-left: 0;
+    text-align: left;
+}
+.section-title {
+    max-width: 636px;
+    margin: -4px auto 55px;
+    text-align: center;
+}
+.read-more i {
+    margin-left: 12px;
+    transition: all ease 0.5s;
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+}
+
+.product-single-item {
+    background-color: #FFFBF5;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.product-single-item .shop-img {
+    margin-bottom: 25px;
+}
+
+@keyframes moveBounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes off-on {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes borderAnimation {
+    0% {
+        background-position: 0 0, -23px 0, 100% -23px, 0 100%;
+    }
+    
+    100% {
+        background-position: 0 -23px, 0 0, 100% 0, -23px 100%;
+    }
+}
