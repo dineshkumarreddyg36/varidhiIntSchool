@@ -14,6 +14,7 @@ import { AboutSchoolComponent } from './about-school/about-school.component';
 import { OurFounderComponent } from './our-founder/our-founder.component';
 import { InfrastructureComponent } from './infrastructure/infrastructure.component';
 import { FooterComponent } from './footer/footer.component';
+import { ScrollBarComponent } from './scroll-bar/scroll-bar.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     AboutSchoolComponent,
     OurFounderComponent,
     InfrastructureComponent,
-    FooterComponent
+    FooterComponent,
+    ScrollBarComponent
   ],
   imports: [
     BrowserModule,

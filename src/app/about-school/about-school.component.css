@@ -1,18 +1,3 @@
-.scroll-container {
-    overflow: hidden;
-    width: 100%; /* Adjust width as needed */
-  }
-  
-  .image-wrapper {
-    display: inline-block;
-    white-space: nowrap;
-    position: relative;
-    transform: translate3d(0%, 0, 0);
-    animation-name: scrollAnimation;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 300s;
-  }
 
   .mission-single-item {
     padding: 52px 56px;
@@ -64,15 +49,6 @@
     top: -217px;
     left: 21px;
     animation: moveBounce 9s infinite linear;
-}
-  
-@keyframes scrollAnimation {
-    0% {
-        transform: translate3d(0%, 0, 0);
-    }
-    100% {
-        transform: translate3d(-100%, 0, 0);
-    }
 }
 
 @keyframes off-on {

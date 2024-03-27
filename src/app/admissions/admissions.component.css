@@ -1,0 +1,13 @@
+.list-title{
+    font-size: 16px;
+    margin-bottom: 2px;
+    color: #5DA357;
+    display: block;
+}
+
+.btn-primary{
+    position: fixed;
+    z-index: 100;
+    right: 1rem;
+    bottom: 4rem;
+}
