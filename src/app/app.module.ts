@@ -15,13 +15,20 @@ import { OurFounderComponent } from './our-founder/our-founder.component';
 import { InfrastructureComponent } from './infrastructure/infrastructure.component';
 import { FooterComponent } from './footer/footer.component';
 import { ScrollBarComponent } from './scroll-bar/scroll-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import{MAT_FORM_FIELD_DEFAULT_OPTIONS, MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AdmissionFormComponent } from './admission-form/admission-form.component';
+import{MatDialogModule} from  '@angular/material/dialog';
+import {MatIconModule} from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavigationComponent,
-    AdmissionsComponent,
     AwardsAchievementsComponent,
     SocialActivitiesComponent,
     GalleryComponent,
@@ -30,13 +37,32 @@ import { ScrollBarComponent } from './scroll-bar/scroll-bar.component';
     OurFounderComponent,
     InfrastructureComponent,
     FooterComponent,
-    ScrollBarComponent
+    ScrollBarComponent,
+    AdmissionsComponent,
+    AdmissionFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatDialogModule,
+    ReactiveFormsModule,
+    MatIconModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'outline'}}
+  ],
+  bootstrap: [AppComponent],
+  exports: [
+    MatFormFieldModule,
+    ScrollBarComponent,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
+  ]
 })
 export class AppModule { }

@@ -1,1 +1,17 @@
-<p>gallery works!</p>
+<app-scroll-bar></app-scroll-bar>
+<div class="container-fluid pt-5 px-5">
+    <h3 class="text-center" style="color: #5DA357;">Gallery</h3>
+    <h2 class="text-center"><b>The Lens of Learning: Relive Our School's Most Captivating Moments</b></h2>
+    <p class="text-center">
+        Welcome to Varidhi International School, where education is an exciting adventure! We're passionate about nurturing young minds, inspiring creativity
+    </p>
+</div>
+<div class="container infrastructure-images">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-between align-items-center">
+        <ng-container *ngFor="let img of galleryImages">
+            <div class="col pb-3">
+                <img [src]="img.imgPath" alt="" style="width: 100%; border-radius: 5%;">
+            </div>
+        </ng-container>
+    </div>
+</div>

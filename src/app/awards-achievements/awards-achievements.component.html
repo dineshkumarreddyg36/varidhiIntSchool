@@ -1,1 +1,27 @@
-<p>awards-achievements works!</p>
+<app-scroll-bar></app-scroll-bar>
+<div class="container mt-5">
+    <div class="header-container">
+        <h2><b>Awards & Achievements</b></h2>
+        <p>Starting a school with focus on quality education is itself a big achievement for Mr. Manjunath Reddy. He is someone who keeps away from publicity. In-spite of it the Vedic Culture and Research Center, Hosur has bestowed him with an Honorary Doctorate for his work in the field of education and also for his social work.</p>
+    </div>
+    <div class="program-container">
+        <h2><b>Our Programs</b></h2>
+        <ol>
+            <li>Publication of Independence Day Celebration on Kannada Prabha.</li>
+            <li>89th birthday of our X President Late. Abdul Kalam Ji was celebrated by Founder of Varidhi International School Dr Manjunath Reddy.</li>
+            <li>Free Eye Examination program for 130th birthday of Dr B R Ambedkar.</li>
+            <li>Birthday Celebration of Dr Manjunath Reddy, founder of Varidhi International School with Antharganga Ashram in Kolar.</li>
+            <li>Chiguru and Yuva Sourabha Program with Kannada and cultural department.</li>
+        </ol>
+        <p>We have facilitated nearly 300 private school teachers and their families who has not paid due to pandamic with dry ration kits in collaboration with Rotary and Varidhi. though some of the NGOs, charitable trusts and also some political leaders are providing services in the urban areas but unable to meet the needy people requirement in the remote areas and boarder villages. From Varidhi trust, We also did some support by providing ration kits to the staff of health department, Police department, Grama panchayat employees and also Anganavadi staff during last year in 2020.</p>
+    </div>
+    <div class="infrastructure-images mt-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-between align-items-center">
+            <ng-container *ngFor="let img of awardsAndAchievementsImages">
+                <div class="col pb-3">
+                    <img [src]="img.imgPath" alt="" style="width: 100%; border-radius: 5%;">
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

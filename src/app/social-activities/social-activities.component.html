@@ -1,1 +1,43 @@
-<p>social-activities works!</p>
+<app-scroll-bar></app-scroll-bar>
+<div class="container">
+    <h2><b>Activities</b></h2>
+    <ol>
+        <li>Makkala Mane Beti (Children’s House visit programmed by Teachers)</li>
+        <li>Varidhi vathsalya program. (Introduction of tradition and culture of our agriculture, folk arts and
+            Education system)</li>
+        <li>Vichaara vantharondige varidhi maathukathe. (Discussions with Intellectuals, Media and Academics about the
+            education system and curriculum)</li>
+        <li>Providing dry ration kits (To the local and village level warriors who works everyday with the Public)</li>
+        <li>Providing health kits to the public. (For ASHA workers and Anganawadi teachers and Grama Panchayat staff)
+        </li>
+        <li>Provided stationary to backward students.</li>
+        <li>Shaala prarambotsava and covid awareness program for Parents and Public</li>
+        <li>Supported Dalit Literary (Writer) kotigaanahalli Ramaiah during his struggles.</li>
+        <li>Provided uniforms to the Anthagange buddimaandya makkala shaale. (Uniforms to Mentally challenged children)
+        </li>
+        <li>We have organised swacha Bharath mission on the hills of therahalli. (Cleaning drive on Plastics)</li>
+        <li>Women Empowerment, Gender in Development and SHGs /Federations of SHGs</li>
+        <li>Sexual Harassment, Gender & Domestic Violence / Human Rights.</li>
+        <li>Moderation and Facilitation Skills – Training of Trainers</li>
+        <li>Behavioral Change Communication & Management in Development</li>
+        <li>Curriculum– Modules Development </li>
+    </ol>
+    <div class="button button-element my-5 ms-5">
+        <a class="btn-primary text-decoration-none p-3">Donate Now<i
+                class="fa-solid fa-arrow-right-long ms-2"></i></a>
+        <div class="account-info ms-5 mt-5 shadow-lg p-3 mb-5 bg-white rounded" style="width: 45%; border: solid 0.1rem; " *ngIf="showAccountInfo || isClickedInside">
+            <div class="w3-button">Name : Varidhi Educational and Cultural Trust</div>
+            <div class="w3-button">Account no : 375005001944</div>
+            <div class="w3-button">IFSC code : ICIC0003750</div>
+        </div>
+    </div>
+    <div class="social-activity-images">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-between align-items-center">
+            <ng-container *ngFor="let img of socialActivityImages">
+                <div class="col pb-3">
+                    <img [src]="img.imgPath" alt="" style="width: 100%; border-radius: 5%;">
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

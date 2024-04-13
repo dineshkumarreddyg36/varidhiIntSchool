@@ -1,1 +1,16 @@
-<p>infrastructure works!</p>
+<app-scroll-bar></app-scroll-bar>
+<div class="container-fluid pt-5 px-5">
+    <h2>Infrastructure</h2>
+    <p>
+        The facilities of a school impact overall learning process as well as the mental and physical growth of the students. These also have a creative impact on the academic performance of the student. Varidhi International School provides the best of facilities to Students such that an environment conducive to learning is created.
+    </p>
+</div>
+<div class="container infrastructure-images">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-between align-items-center">
+        <ng-container *ngFor="let img of infrastructureImages">
+            <div class="col pb-3">
+                <img [src]="img.imgPath" alt="" style="width: 100%; border-radius: 5%;">
+            </div>
+        </ng-container>
+    </div>
+</div>

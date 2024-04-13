@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./awards-achievements.component.css']
 })
 export class AwardsAchievementsComponent {
-
+  awardsAndAchievementsImages:any[]=[
+    {
+      imgPath: '../../assets/a-a-1.jpg'
+    },
+    {
+      imgPath: '../../assets/a-a-2.jpg'
+    },
+    {
+      imgPath: '../../assets/a-a-3.jpg'
+    }
+  ]
 }

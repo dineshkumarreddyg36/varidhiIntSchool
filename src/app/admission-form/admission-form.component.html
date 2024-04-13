@@ -1,0 +1,45 @@
+<form [formGroup]="fromInputs" (ngSubmit)="onFormSubmit()">
+    <div class="admission-form shadow-lg p-3 bg-body rounded">
+        <h2 class="text-center">Admission Form</h2>
+        <h3>Please fill the form. Our Admission Advisor will contact you shortly</h3>
+        <div class="row">
+            <mat-form-field appearance="outline" class="col">
+                <mat-label>Parent Name</mat-label>
+                <input matInput placeholder="Enter Parent Name" required type="text" formControlName="parentName">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="col">
+                <mat-label>Email Id</mat-label>
+                <input type="email" matInput required placeholder="Enter your emai" formControlName="emailId">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline" class="col">
+                <mat-label>Student Name</mat-label>
+                <input matInput required placeholder="Enter Student Name" type="text" formControlName="studentName">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="col">
+                <mat-label>Phone No</mat-label>
+                <input matInput required placeholder="Enter Phone Number" type="tel" pattern="[0-9]{10}" formControlName="phoneNo">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline" class="col">
+                <mat-label>Grade</mat-label>
+                <input matInput required placeholder="Enter Student Grade" formControlName="grade">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="col">
+                <mat-label>Message</mat-label>
+                <textarea matInput placeholder="Please tell us something about the kid" formControlName="message"></textarea>
+                <!-- <input matInput placeholder="Please tell us something about the kid" type="textbox"> -->
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <div class="submit-button" class="col">
+                <button class="btn btn-secondary w-100" style="background-color: #26015e; border-radius: 1rem;" type="submit">Submit</button>
+            </div>
+            <div class="close-button pt-2" class="col">
+                <button class="btn btn-danger w-100" style="border-radius: 1rem;" (click)="_dialogRef.close()">Close</button>
+            </div>
+        </div>
+    </div>
+</form>
